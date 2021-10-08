@@ -499,7 +499,7 @@ footer .social a:hover {
 
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
-@media (min-width: 1210px) {
+@media (min-width: 1200px) {
   /* reusable classes */
   .container {
     max-width: 1120px;
@@ -529,37 +529,23 @@ footer .social a:hover {
   }
 
   /* home */
-  #home .container {
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
 
-  #home .image {
-    order: 1;
-  }
-
-  #home .text {
+  #home .text h2 {
     order: 0;
     max-width: 25rem;
     text-align: left;
   }
-
   /* about */
-  #about .container {
-    margin: 0 auto;
-    grid-auto-flow: column;
-  }
 
   /* services */
 
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+  #services .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   /* testimonials */
@@ -591,17 +577,22 @@ footer .social a:hover {
     font-size: 2.25rem;
   }
 }
-/* large devices: 1023 > */
+/* Desktops devices: 1023 > */
 @media (min-width: 1023px) {
 }
-/* large devices: 992 > */
+/* Notebooks devices: 992 > */
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
+  #about .text {
+    max-width: none;
+  }
 }
-/* medium devices: 767 > */
+
+/* Tablet devices: 767 > */
 
 @media (min-width: 767px) {
   /* NAVIGATION */
@@ -648,7 +639,27 @@ footer .social a:hover {
 
   #home .text {
     order: 0;
-    max-width: 20rem;
+    max-width: 23rem;
     text-align: left;
+  }
+
+  /* ABOUT */
+  #about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+
+  #about .text {
+    max-width: 25rem;
+  }
+
+  /* CARDS */
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
