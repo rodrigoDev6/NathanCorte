@@ -23,7 +23,7 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 479;
+  --hue: 203;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -315,18 +315,25 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 3.635rem 2rem;
   box-shadow: 0px 0px 12px rgb(0 0 0 / 8%);
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
-.card i {
+.card img {
   display: block;
   font-size: 5rem;
   margin-bottom: 2rem;
   color: var(--base-color);
+}
+.card p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.card p {
+  padding-bottom: 1rem;
 }
 
 /* ===== TESTIMONIALS ==== */
@@ -543,9 +550,8 @@ footer .social a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .card {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .card img {
+    min-height: 11.305rem;
   }
 
   /* testimonials */
@@ -583,7 +589,7 @@ footer .social a:hover {
 /* Notebooks devices: 992 > */
 @media (min-width: 992px) {
   :root {
-    --title-font-size: 2.25rem;
+    --title-font-size: 1.975rem;
     --subtitle-font-size: 1.125rem;
   }
 
@@ -658,8 +664,8 @@ footer .social a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  .card {
+  /* .card {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
+  } */
 }
